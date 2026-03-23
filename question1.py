@@ -2,6 +2,7 @@ from pathlib import Path
 
 import numpy as np
 from scipy.io import loadmat
+from scipy.fft import fftn, ifftn
 
 
 def verify_fft_pairs(spectral, real_space):
@@ -12,8 +13,8 @@ def verify_fft_pairs(spectral, real_space):
         uk = spectral[comp]
         n_total = u.size
 
-        uk_from_u = np.fft.fftn(u) / n_total
-        u_from_uk = np.fft.ifftn(uk * n_total)
+        uk_from_u = fftn(u, s = (192, 192, 192)) / n_total
+        u_from_uk = ifftn(uk * n_total, s = (192, 192, 192))
 
         results[comp] = {
             "forward_rel_l2": np.linalg.norm((uk_from_u - uk).ravel()) / np.linalg.norm(uk.ravel()),
