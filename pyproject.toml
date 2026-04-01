@@ -7,4 +7,6 @@ dependencies = [
     "matplotlib>=3.10.8",
     "scipy>=1.17.1",
     "scipy-stubs~=1.17.1",
+    "pyvista>=0.46.3",
+    "pytest>=8.4.2",
 ]
