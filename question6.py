@@ -63,9 +63,9 @@ if __name__ == "__main__":
     plt.plot(k_array, E_spectrum, marker=".", linestyle="-")
     plt.semilogx()
     plt.semilogy()
-    plt.xlabel("Wavenumber k")
-    plt.ylabel("Energy E(k)")
-    plt.title("Energy spectrum E(k) vs wavenumber k")
+    plt.xlabel(r"Wavenumber $\xi$")
+    plt.ylabel(r"Energy $E(\xi)$")
+    plt.title(r"Energy spectrum $E(\xi)$ vs wavenumber $\xi$")
     plt.grid()
     plt.show()
 

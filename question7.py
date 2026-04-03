@@ -65,11 +65,11 @@ if __name__ == "__main__":
     k_array, diss_spectrum = diss_spec_3D(np.arange(0, np.ceil(np.max(fftfreq(nx, d=lx/nx)*2*np.pi/k_0)*np.sqrt(3))+1) , spectral, domain_lengths, k_0)
     plt.figure()
     plt.plot(k_array, diss_spectrum, marker=".", linestyle="-")
-    plt.xlabel("Wavenumber k")
+    plt.xlabel(r"Wavenumber $\xi$")
     plt.ylabel("Dissipation spectrum")
     plt.semilogx()
     #plt.semilogy()
-    plt.title("Dissipation spectrum vs wavenumber k")
+    plt.title(r"Dissipation spectrum vs wavenumber $\xi$")
     plt.grid()
     plt.tight_layout()
     plt.show()
@@ -79,6 +79,3 @@ if __name__ == "__main__":
     print(f"Total kinetic energy: {KE:.6e}")
     print(f"Total dissipation rate: {dissipation_rate:.6e}")
 
-
-#Total kinetic energy: 2.506139e+00
-#Total dissipation rate: 8.421682e-01

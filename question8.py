@@ -81,9 +81,9 @@ if __name__ == "__main__":
     plt.figure()
     plt.plot(k_array, kolmogorov_constant)
     plt.semilogx()
-    plt.xlabel("Wavenumber k")
-    plt.ylabel("Kolmogorov constant C(k)")
-    plt.title("Kolmogorov constant C(k) vs wavenumber k")
+    plt.xlabel(r"Wavenumber $\xi$")
+    plt.ylabel(r"Kolmogorov constant $C(\xi)$")
+    plt.title(r"Kolmogorov constant $C(\xi)$ vs wavenumber $\xi$")
     plt.grid()
     plt.show()
 

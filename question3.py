@@ -61,6 +61,7 @@ def render_contour(contour, window_title="Q-criterion iso-surface"):
     plotter.set_background("#ffffff")
     plotter.add_mesh(contour, smooth_shading=True)
     plotter.show_axes()
+    plotter.save_graphic("q_criterion_contour.pdf")
     plotter.show()
 
 

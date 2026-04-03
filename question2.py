@@ -75,6 +75,6 @@ if __name__ == "__main__":
 
     print(f"RMS divergence (FD2): {rms_fd2_div:.3e}")
     print(f"RMS divergence (Spectral): {rms_spectral:.3e}, max imag part: {max_imag_spectral:.3e}")
-
+    print(fd2_div.mean(), div_spectral.mean())
 
 

@@ -188,7 +188,7 @@ if __name__ == "__main__":
     Bardina_SGS_deviatoric = Bardina_deviatoric(filtered_spectral, domain_lengths, filter_width)
     SGS_tensor2 = SGS_deviatoric(spectral, domain_lengths, new_N)
 
-    covariance = np.corrcoef(SGS_tensor2.flatten(), Bardina_SGS_deviatoric.flatten())
+    covariance = np.corrcoef(SGS_tensor2.flatten(), SGS_tensor.flatten())
     print(covariance)
 
 

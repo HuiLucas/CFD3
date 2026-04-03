@@ -82,7 +82,7 @@ if __name__ == "__main__":
     lambda_g = np.sqrt(10*0.0008*KE/diss_rate)
     Re_lambda = lambda_g * np.sqrt(2*KE/3)/0.0008
     integral_L_scale = Re_L * 0.0008 /np.sqrt(KE) # pope 244
-    print(f"Re_L: {Re_L:.2e}, Re_lambda: {Re_lambda:.2e}, lambda_g: {lambda_g:.2e}, integral L scale: {integral_L_scale:.2e}")
+    print(f"Re_L: {Re_L:.4e}, Re_lambda: {Re_lambda:.4e}, lambda_g: {lambda_g:.4e}, integral L scale: {integral_L_scale:.4e}")
 
 
 
